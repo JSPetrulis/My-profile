@@ -8,7 +8,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: #f9f9f9;
+            background-color: #C8C5BD;
             color: #333;
         }
 
@@ -19,19 +19,30 @@
             color: #333;
         }
 
-            a:hover {
-                color: #0073e6;
-                text-decoration: underline;
-        }
-        
-            a[download]:hover {
-                background-color: #005bb5;
+        a:hover {
+            color: #0073e6;
+            text-decoration: underline;
         }
 
         img {
             width: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
+        }
+
+        /* Download CV button styling */
+        .download-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #0073e6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .download-btn:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
@@ -41,13 +52,12 @@
     <p>MSc Mechanical Engineer | Dynamics | Numerical Modelling | Structural Analysis | Topology Optimisation</p>
     <p>I specialise in numerical modelling and structural optimisation, with a focus on improving engineering designs and materials efficiency.</p>
 
-    <a href="Justas_Savinijus_Petrulis_CV.pdf" target="_blank">CV</a>
-    <a href="Justas_Savinijus_Petrulis_CV.pdf" download 
-   style="display:inline-block; padding:12px 25px; background:#0073e6; color:#fff; 
-          text-decoration:none; border-radius:5px; margin:10px 0;">Download CV</a>
+    <a href="Justas_Savinijus_Petrulis_CV.pdf" class="download-btn" download>Download CV</a>
     <a href="https://www.linkedin.com/in/petrulis-j-s" target="_blank">LinkedIn</a>
     <a href="mailto:justas.s.petrulis@gmail.com">justas.s.petrulis@gmail.com</a>
 </body>
 </html>
+
+
 
 
