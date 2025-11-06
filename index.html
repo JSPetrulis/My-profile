@@ -1,65 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ir. Justas Savinijus Petrulis</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #C8C5BD;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <title>Ir. Justas Savinijus Petrulis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+    }
 
-        a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #333;
-        }
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      gap: 40px;
+    }
 
-        a:hover {
-            color: #0073e6;
-            text-decoration: underline;
-        }
+    /* Left sidebar */
+    .sidebar {
+      flex: 1;
+      max-width: 250px;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
 
-        img {
-            width: 150px;
-            border-radius: 25%;
-            margin-bottom: 20px;
-        }
+    .sidebar img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
 
-        /* Download CV button styling */
-        .download-btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #0073e6;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
+    .sidebar h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
 
-        .download-btn:hover {
-            background-color: #005bb5;
-        }
-    </style>
+    .sidebar p {
+      font-size: 14px;
+      color: #666;
+      margin: 5px 0 15px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 8px 0;
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .content {
+      flex: 2.5;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    .content h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0073e6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .download-btn:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin: 30px 0;
+    }
+  </style>
 </head>
 <body>
-    <img src="IMG_8527.jpg" alt="Justas Petrulis">
-    <h1>Ir. Justas Savinijus Petrulis</h1>
-    <p>MSc Mechanical Engineer | Dynamics | Numerical Modelling | Structural Analysis | Topology Optimisation</p>
-    <p>I specialise in numerical modelling and structural optimisation, with a focus on improving engineering designs and materials efficiency.</p>
+  <div class="container">
+    <div class="sidebar">
+      <img src="IMG_8527.jpg" alt="Justas Petrulis">
+      <h2>Justas Savinijus Petrulis</h2>
+      <p>MSc Mechanical Engineer</p>
+      <a href="Justas_Savinijus_Petrulis_CV.pdf" class="download-btn" download>Download CV</a>
+      <a href="https://www.linkedin.com/in/petrulis-j-s" target="_blank">LinkedIn</a>
+      <a href="mailto:justas.s.petrulis@gmail.com">Email</a>
+    </div>
 
-    <a href="Justas_Savinijus_Petrulis_CV.pdf" class="download-btn" download>Download CV</a>
-    <a href="https://www.linkedin.com/in/petrulis-j-s" target="_blank">LinkedIn</a>
-    <a href="mailto:justas.s.petrulis@gmail.com?subject=Justas,%20Let's%20work%20together&body=Hi%20Justas,%0A%0AI%20saw%20your%20profile%20and%20I%20love%20it!">
-    justas.s.petrulis@gmail.com
-    </a>
+    <div class="content">
+      <h1>About Me</h1>
+      <p>I am a Mechanical Engineer specialising in numerical modelling, structural analysis, and topology optimisation. My work focuses on improving material and structural efficiency through computational methods.</p>
 
+      <h1>Research Interests</h1>
+      <p>Numerical modelling, finite element analysis, topology optimisation, material design, and computational mechanics.</p>
+
+      <h1>Contact</h1>
+      <p>Feel free to reach out for collaborations or research discussions.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Justas Petrulis
+  </footer>
 </body>
 </html>
+
+
 
 
 
