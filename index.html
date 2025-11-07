@@ -23,7 +23,7 @@
     .sidebar {
       flex: 1;
       max-width: 250px;
-      text-align: center;
+      text-align: left;
       background-color: #ffffff;
       border-radius: 12px;
       padding: 25px;
@@ -31,41 +31,55 @@
     }
 
     .sidebar img {
+      display: block;
+      margin: 0 auto 15px;
       width: 120px;
       border-radius: 50%;
-      margin-bottom: 15px;
     }
 
     .sidebar h2 {
+      text-align: center;
       margin: 10px 0 5px;
       font-size: 20px;
+      font-weight: 600;
     }
 
     .sidebar p {
+      text-align: center;
       font-size: 14px;
       color: #666;
-      margin: 5px 0 15px;
+      margin: 5px 0 20px;
     }
 
-    .sidebar a {
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact-links a {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
-      margin: 8px 0;
-      color: #0073e6;
       text-decoration: none;
+      color: #000;
       font-size: 15px;
     }
 
-    .sidebar a:hover {
+    .contact-links a:hover {
       text-decoration: underline;
     }
 
     .icon {
       width: 18px;
       height: 18px;
-      fill: #0073e6;
+      flex-shrink: 0;
+      fill: #000;
+    }
+
+    .linkedin .icon {
+      fill: #0077b5;
     }
 
     .download-btn {
@@ -79,7 +93,7 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: 500;
-      margin: 10px auto;
+      text-align: center;
     }
 
     .download-btn:hover {
@@ -97,12 +111,6 @@
 
     .content h1 {
       font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    .content h2 {
-      font-size: 22px;
-      margin-top: 25px;
       margin-bottom: 10px;
     }
 
@@ -126,26 +134,27 @@
       <h2>Justas Savinijus Petrulis</h2>
       <p>MSc Mechanical Engineer</p>
 
-      <a href="#" class="location">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
-        Delft, Netherlands
-      </a>
+      <div class="contact-links">
+        <a href="#">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
+          Delft, Netherlands
+        </a>
 
-      <a href="mailto:justas.s.petrulis@gmail.com">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 
-        2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
-        4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        Email
-      </a>
+        <a href="mailto:justas.s.petrulis@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+          1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+          4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          justas.s.petrulis@gmail.com
+        </a>
 
-      <a href="https://www.linkedin.com/in/petrulis-j-s" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 
-        4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 
-        2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-.9 
-        1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.5V24h-4v-8.2c0-2 
-        0-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4V8z"/></svg>
-        LinkedIn
-      </a>
+        <a href="https://www.linkedin.com/in/petrulis-j-s" target="_blank" class="linkedin">
+          <svg class="icon" viewBox="0 0 34 34"><path d="M34,2.5v29c0,1.4-1.1,2.5-2.5,2.5h-29C1.1,34,0,32.9,0,31.5v-29C0,1.1,1.1,0,2.5,0h29
+          C32.9,0,34,1.1,34,2.5z M10.1,28.7V13.1H5.2v15.6H10.1z M7.6,11.1c1.6,0,2.9-1.3,2.9-2.9S9.2,5.3,7.6,5.3S4.7,6.6,4.7,8.2
+          S6,11.1,7.6,11.1z M28.7,28.7V20c0-4.6-2.5-6.7-5.8-6.7c-2.7,0-4,1.5-4.7,2.6h-0.1v-2.2h-4.9c0.1,1.5,0,15,0,15h4.9v-8.4
+          c0-0.5,0-1,0.2-1.3c0.5-1,1.4-2.1,3.1-2.1c2.2,0,3.1,1.6,3.1,4v7.9H28.7z"/></svg>
+          LinkedIn
+        </a>
+      </div>
 
       <a href="Justas_Savinijus_Petrulis_CV.pdf" class="download-btn" download>
         <svg class="icon" viewBox="0 0 24 24" fill="#fff"><path d="M5 20h14v-2H5v2zm7-18-5.5 
